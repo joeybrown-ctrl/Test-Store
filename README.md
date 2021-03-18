@@ -4,7 +4,7 @@
 
 **version 1.0.0**
 
-[For deployed version, click me](https://joeybrown-ctrl.github.io/test-store)
+[For deployed version, click me](https://joeybrown-ctrl.github.io/Test-Store)
 
 <br>
 
@@ -28,7 +28,7 @@
 
   <hr>
 
-    An online store built with React, Bootstrap, and dummy data from fakestoreapi.com (RIP). 
+An online store built with React, Bootstrap, and dummy data from fakestoreapi.com (RIP). 
 
 
   <hr>
