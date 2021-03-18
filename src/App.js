@@ -11,7 +11,8 @@ class App extends Component {
     return(
       <Wrapper>
         <Nav />
-        <Title>Test Store</Title>
+        <br />
+        <Title>Welcome to the Test Store!</Title>
         <Container>
           <Results />
         </Container>

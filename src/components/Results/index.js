@@ -13,7 +13,7 @@ class Results extends Component {
 
     searchProducts = search => {
         this.setState({ results: products });
-        // Filter for products with a name that is approximate to the search made by user
+        // Filter for products with a title that is approximate to the search made by user
         const results = this.state.products.filter((result) => {
             return result.title.toLowerCase().includes(search.toLowerCase()) !== false || result.category.toLowerCase().includes(search.toLowerCase()) !== false
         })
@@ -51,20 +51,24 @@ class Results extends Component {
                 />
 
                 <div className='row'>
-                    {this.state.results.map(result => (
-                        <Card
-                            removeProduct={this.removeProduct}
-                            id={result.id}
-                            key={result.id}
-                            title={result.title}
-                            price={result.price}
-                            description={result.description}
-                            category={result.category}
-                            image={result.image}
-                            >
-                        </Card>
-                    ))}
+                    <div className="col text-center">
+                        {this.state.results.map(result => (
+                            <Card
+                                removeProduct={this.removeProduct}
+                                id={result.id}
+                                key={result.id}
+                                title={result.title}
+                                price={result.price}
+                                description={result.description}
+                                category={result.category}
+                                image={result.image}
+                                >
+                            </Card>
+                        ))}
+                    </div>
                 </div>
+                <hr />
+                <br />
 
             </div>
         )
