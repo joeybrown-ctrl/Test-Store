@@ -1,6 +1,7 @@
 import React from 'react';
 
 function Card(props) {
+
     const styles = {
         card: {
             width: '18 rem'
@@ -17,7 +18,7 @@ function Card(props) {
                 </div>
                 <ul className="list-group list-group-flush">
                     <li className="list-group-item">{props.description}</li>
-                    <li className="list-group-item">{props.category}</li>
+                    <li className="list-group-item">Category: {props.category}</li>
                 </ul>
             </div>
             <br />
